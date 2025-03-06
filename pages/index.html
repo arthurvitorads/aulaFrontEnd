@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>AULA</title>
+    <title>Bem vindo</title>
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
+
+<!-- metodo get é publico na url -->
+<!-- metodo post é privado na url -->
+
 <body>
-    <div id="content">
-        <div>
-        </div>
-        <div class="login">
-            <input type="text" class="input_login">
-            <input type="password" class="input_login">
-            <button id="button-enter">Entrar</button>
-        </div>
+    <div id="conteudo">
+        <form method="post">
+            <input name="email" type="email" class="input" placeholder="Informe seu e-mail:" required> 
+            <input name="senha" type="password" class="input" placeholder="Informe sua senha:" required>
+            <button type="submit" id="botao-entrar">Entrar</button>
+        </form>
     </div>
+    <script src="../script.js"></script>
 </body>
+
 </html>
